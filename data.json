@@ -19,57 +19,6 @@
           "En çok tercih edilen hizmetlerin analitik gösterimi",
           "Personel performans ve prim hesaplama tabloları"
         ]
-      },
-      "personel_ve_ekip_yonetimi": {
-        "aciklama": "Çalışanların tüm çalışma süreçlerini dijitalleştirir.",
-        "ozellikler": [
-          "Kişiselleştirilmiş personel çalışma takvimleri",
-          "Berber bazlı uzmanlık alanı tanımlama (Saç, Sakal, Boya vb.)",
-          "Esnek mola ve izin yönetim sistemi",
-          "Personel özel puanlama ve geri bildirim arşivi"
-        ]
-      },
-      "finansal_takip_ve_gider_ajandasi": {
-        "aciklama": "Dükkanın parasal döngüsünü kuruşu kuruşuna takip eder.",
-        "alt_basliklar": [
-          "Kira, fatura ve ürün alımı gibi sabit/değişken gider takibi",
-          "Hizmet bazlı net kâr analizi",
-          "Geçmişe dönük finansal raporlama ve arşivleme"
-        ]
-      }
-    },
-    "musteri_deneyimi_ekosistemi": {
-      "kusursuz_rezervasyon_akisi": {
-        "aciklama": "Müşteriyi yormayan, 7/24 açık dijital asistan.",
-        "adimlar": [
-          "Hizmet Kataloğu: Görsel ve fiyat destekli seçim menüsü",
-          "Zaman Yönetimi: Sadece boş olan saatlerin gösterildiği dinamik takvim",
-          "Usta Seçimi: Müşterinin istediği berberi seçme özgürlüğü",
-          "Anlık Onay: Bekleme olmaksızın randevunun kesinleşmesi"
-        ]
-      },
-      "kisisel_randevu_portali": {
-        "aciklama": "Müşterinin kendi randevularının patronu olmasını sağlar.",
-        "fonksiyonlar": [
-          "Randevu Sorgulama: Telefon numarasıyla tek tıkla mevcut durumu görme",
-          "Randevu İptal/Değişim: Dükkanı aramadan randevu güncelleyebilme",
-          "Hizmet Geçmişi: Daha önce alınan hizmetlerin listesi"
-        ]
-      },
-      "guvenlik_ve_dogrulama_katmani": {
-        "aciklama": "Sistemi kötü niyetli kullanımlardan koruyan zırh.",
-        "bilesenler": [
-          "WhatsApp/SMS OTP: Gerçek kişiler tarafından alınan güvenli randevular",
-          "Akıllı Kara Liste: Randevusuna gelmeyenleri otomatik kısıtlama",
-          "Sahte Numara Engelleme: Doğrulanmamış hesapların işlem yapamaması"
-        ]
-      }
-    },
-    "otomasyon_ve_akilli_bildirimler": {
-      "dijital_asistan_servisleri": {
-        "whatsapp_entegrasyonu": "Randevu anında ve hatırlatma zamanında otomatik mesaj gönderimi.",
-        "akilli_hatirlatici": "Randevuya belirli bir süre kala müşteriye 'Unutma' mesajı iletilmesi.",
-        "otomatik_durum_guncelleyici": "Tamamlanan randevuların sistemde anlık olarak 'Başarılı' işaretlenmesi."
       }
     }
   },
@@ -84,46 +33,109 @@
     "Müşteri nezdinde profesyonel ve modern marka imajı",
     "Unutulan randevuların neden olduğu gelir kaybının önlenmesi"
   ],
+  "proje_kimligi": {
+    "logo": "Softetro<b>Randevu</b>"
+  },
   "paketler": [
     {
       "ad": "Başlangıç",
-      "fiyat": "1500 TL",
+      "fiyat": "1.000 ₺",
+      "kurulum": "5.000 ₺",
+      "bakim": "2.000 ₺/yıl",
+      "sms_kotasi": "500 SMS / ay",
       "ozellikler": [
-        "Randevu yönetimi",
-        "Müşteri takibi",
-        "Online randevu sistemi"
+        "<strong style='font-size:11px;letter-spacing:.08em;color:#888;text-transform:uppercase;'>Randevu & Takvim</strong>",
+        "Online randevu alma",
+        "Her çalışana ayrı takvim",
+        "<strong style='font-size:11px;letter-spacing:.08em;color:#888;text-transform:uppercase;'>Müşteri Yönetimi</strong>",
+        "Müşteri kaydı",
+        "<strong style='font-size:11px;letter-spacing:.08em;color:#888;text-transform:uppercase;'>Personel</strong>",
+        "3 personel",
+        "Vardiya saati yönetimi",
+        "<strong style='font-size:11px;letter-spacing:.08em;color:#888;text-transform:uppercase;'>Hizmetler</strong>",
+        "5 hizmet tanımı",
+        "Hizmet süresi & fiyat ayarı",
+        "<strong style='font-size:11px;letter-spacing:.08em;color:#888;text-transform:uppercase;'>Bildirimler</strong>",
+        "SMS doğrulama kodu",
+        "SMS randevu hatırlatma",
+        "SMS iptal bildirimi",
+        "<strong style='font-size:11px;letter-spacing:.08em;color:#888;text-transform:uppercase;'>İstatistik & Finans</strong>",
+        "Gelir grafiği",
+        "Gider kategorisi girişi",
+        "<strong style='font-size:11px;letter-spacing:.08em;color:#888;text-transform:uppercase;'>Şube</strong>",
+        "Tek şube"
       ]
     },
     {
-      "ad": "Standart",
+      "ad": "Pro",
       "populer": true,
-      "fiyat": "2000 TL",
+      "fiyat": "1.250 ₺",
+      "kurulum": "5.000 ₺",
+      "bakim": "2.000 ₺/yıl",
+      "sms_kotasi": "1.500 SMS / ay",
       "ozellikler": [
-        "8 personel dahil",
-        "Sınırsız randevu girişi",
-        "Özel müşteri temsilcisi",
-        "Hatırlatma SMS'leri dahil",
-        "Adisyon yönetimi",
-        "Gelir ve masraf takibi",
-        "Parapuan sistemi",
-        "Memnuniyet anketleri",
-        "Gelişmiş yetkilendirme sistemi",
-        "Çoklu şube yönetimi"
+        "<strong style='font-size:11px;letter-spacing:.08em;color:#888;text-transform:uppercase;'>Randevu & Takvim</strong>",
+        "Online randevu alma",
+        "Her çalışana ayrı takvim",
+        "Toplu takvim görünümü",
+        "Takvim filtreleme",
+        "<strong style='font-size:11px;letter-spacing:.08em;color:#888;text-transform:uppercase;'>Müşteri Yönetimi</strong>",
+        "Müşteri kaydı (isim & telefon)",
+        "Kara liste & ban sistemi",
+        "<strong style='font-size:11px;letter-spacing:.08em;color:#888;text-transform:uppercase;'>Personel</strong>",
+        "7 personel",
+        "Vardiya saati yönetimi",
+        "<strong style='font-size:11px;letter-spacing:.08em;color:#888;text-transform:uppercase;'>Hizmetler</strong>",
+        "Sınırsız hizmet tanımı",
+        "Hizmet süresi & fiyat ayarı",
+        "<strong style='font-size:11px;letter-spacing:.08em;color:#888;text-transform:uppercase;'>Bildirimler</strong>",
+        "SMS doğrulama kodu",
+        "SMS randevu hatırlatma",
+        "SMS iptal bildirimi",
+        "WhatsApp yönlendirme butonu",
+        "<strong style='font-size:11px;letter-spacing:.08em;color:#888;text-transform:uppercase;'>İstatistik & Finans</strong>",
+        "1 haftalık istatistikler",
+        "Gelir & gider grafiği",
+        "En çok alınan randevu türü",
+        "Gider kategorisi girişi",
+        "<strong style='font-size:11px;letter-spacing:.08em;color:#888;text-transform:uppercase;'>Şube</strong>",
+        "Tek şube"
       ]
     },
     {
-      "ad": "Full",
-      "fiyat": "2500 TL",
+      "ad": "Zincir",
+      "fiyat": "2.000 ₺",
+      "kurulum": "5.000 ₺",
+      "bakim": "2.000 ₺/yıl",
+      "sms_kotasi": "5.000 SMS / ay",
       "ozellikler": [
-        "10 personel dahil",
-        "Ürün satışı ve stok yönetimi",
-        "Paket satışı ve kullanım takibi",
-        "Cari alacak ve taksit takibi",
-        "Personel performans takibi",
-        "Prim ve hak ediş takibi",
-        "Borç ve ödeme takibi",
-        "Google Takvim entegrasyonu",
-        "Kendi isminizle web sitesi"
+        "<strong style='font-size:11px;letter-spacing:.08em;color:#888;text-transform:uppercase;'>Randevu & Takvim</strong>",
+        "Online randevu alma",
+        "Her çalışana ayrı takvim",
+        "Toplu takvim görünümü",
+        "Takvim filtreleme",
+        "<strong style='font-size:11px;letter-spacing:.08em;color:#888;text-transform:uppercase;'>Müşteri Yönetimi</strong>",
+        "Müşteri kaydı (isim & telefon)",
+        "Kara liste & ban sistemi",
+        "<strong style='font-size:11px;letter-spacing:.08em;color:#888;text-transform:uppercase;'>Personel</strong>",
+        "Sınırsız personel",
+        "Vardiya saati yönetimi",
+        "<strong style='font-size:11px;letter-spacing:.08em;color:#888;text-transform:uppercase;'>Hizmetler</strong>",
+        "Sınırsız hizmet tanımı",
+        "Hizmet süresi & fiyat ayarı",
+        "<strong style='font-size:11px;letter-spacing:.08em;color:#888;text-transform:uppercase;'>Bildirimler</strong>",
+        "SMS doğrulama kodu",
+        "SMS randevu hatırlatma",
+        "SMS iptal bildirimi",
+        "1 aylık otomatik çağrı SMS",
+        "WhatsApp yönlendirme butonu",
+        "<strong style='font-size:11px;letter-spacing:.08em;color:#888;text-transform:uppercase;'>İstatistik & Finans</strong>",
+        "1 haftalık istatistikler",
+        "Gelir & gider grafiği",
+        "En çok alınan randevu türü",
+        "Gider kategorisi girişi",
+        "<strong style='font-size:11px;letter-spacing:.08em;color:#888;text-transform:uppercase;'>Şube</strong>",
+        "Çoklu şube yönetimi"
       ]
     }
   ]

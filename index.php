@@ -18,8 +18,7 @@ $moduller = $data['moduller_ve_kapasite'];
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   
-    <link rel="stylesheet" href="style.css?v=9999">
-
+    <link rel="stylesheet" href="d.css">
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -35,6 +34,7 @@ $moduller = $data['moduller_ve_kapasite'];
         <nav class="nav-menu">
             <a href="#" class="nav-item active">Anasayfa</a>
             <a href="#ozellikler" class="nav-item">Özellikler</a>
+            <a href="#demo" class="nav-item">Demo</a>
             <a href="#paketler" class="nav-item">Paketler</a>
             <a href="#iletisim" class="nav-item">İletişim</a>
         </nav>
@@ -87,45 +87,52 @@ $moduller = $data['moduller_ve_kapasite'];
         </div>
     </div>
 </div>
-<section class="tech-benefits-section">
+<section  id="ozellikler" class="tech-benefits-section">
     <div class="container">
  
-        <div class="bento-grid">
- 
-            <!-- ANA BÜYÜK BENTO (kırmızı, 7 kolon x 2 satır) -->
-            <div class="bento-item main-bento reveal">
-                <span class="top-tag">Altyapı</span>
-                <h3>Teknik Üstünlük<br>ve Altyapı</h3>
-                <p>En güncel teknolojilerle donatılmış,<br>güvenilir ve ölçeklenebilir bir sistem.</p>
-                <div class="bento-line">
+        <div class="tech-top-grid">
+
+    <!-- SOL — VİDEO KART (ÖNCE GELMELİ) -->
+    <div class="bento-item main-bento reveal" style="background:#0f0f0f !important; padding:0; overflow:hidden; justify-content:flex-start; flex-direction:column; height:460px; grid-column:unset !important; grid-row:unset !important;">
+        <video autoplay muted loop playsinline style="width:100%; max-height:280px; object-fit:cover; display:block; flex-shrink:0;">
+            <source src="assets/hizmetlerpc.mp4" type="video/mp4">
+        </video>
+        <div style="padding:20px 28px 24px; display:flex; flex-direction:column; flex:1;">
+            <span class="top-tag" style="margin-bottom:10px;">Altyapı</span>
+            <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:12px;">
+                <div>
+                    <h3 style="margin-bottom:6px;">Teknik Üstünlük<br>ve Altyapı</h3>
+                    <p>En güncel teknolojilerle donatılmış, güvenilir ve ölçeklenebilir bir sistem.</p>
+                </div>
+                <div class="bento-line" style="flex-shrink:0; flex-direction:column; gap:5px; margin-top:4px;">
                     <span></span><span></span><span></span>
                 </div>
             </div>
- 
-            <!-- KART 2 -->
-            <div class="bento-item reveal">
-                <div class="bento-icon"><i class="fa-solid fa-lock"></i></div>
-                <h4>Veri Güvenliği</h4>
-                <p>Yüksek şifreleme standartları ile korunan müşteri veritabanı.</p>
+        </div>
+    </div>
+
+    <!-- SAĞ — FAN KARTLAR (SONRA GELMELİ) -->
+    <div class="fan-stack-wrapper">
+        <div class="fan-stack" id="fanStack">
+            <div class="fan-card">
+                <div class="fan-card-icon"><i class="fa-solid fa-cloud"></i></div>
+                <h4>Kesintisiz Çalışma</h4>
+                <p>Bulut tabanlı altyapı sayesinde 7/24 aktif ve hızlı erişim.</p>
             </div>
- 
-            <!-- KART 3 -->
-            <div class="bento-item reveal">
-                <div class="bento-icon"><i class="fa-solid fa-display"></i></div>
+            <div class="fan-card">
+                <div class="fan-card-icon"><i class="fa-solid fa-comment"></i></div>
                 <h4>Erişilebilirlik</h4>
                 <p>Tüm telefon, tablet ve bilgisayarlarla %100 uyumlu yapı.</p>
             </div>
- 
-            <!-- GENİŞ BENTO -->
-            <div class="bento-item wide-bento reveal">
-                <div class="bento-icon"><i class="fa-solid fa-cloud"></i></div>
-                <div class="bento-text">
-                    <h4>Kesintisiz Çalışma</h4>
-                    <p>Bulut tabanlı altyapı sayesinde 7/24 aktif ve hızlı erişim.</p>
-                </div>
+            <div class="fan-card active">
+                <div class="fan-card-icon"><i class="fa-solid fa-lock"></i></div>
+                <h4>Veri Güvenliği</h4>
+                <p>Yüksek şifreleme standartları ile korunan müşteri veritabanı.</p>
             </div>
- 
         </div>
+    </div>
+
+</div>
  
         <!-- BENEFITS SPLIT -->
         <div class="benefits-split">
@@ -151,7 +158,7 @@ $moduller = $data['moduller_ve_kapasite'];
                     <p>Profesyonel ve modern marka imajı</p>
                 </div>
                 <div class="benefit-card reveal">
-                    <div class="benefit-tag"><i class="fa-solid fa-money-bill-trend-up"></i></div>
+                    <div class="benefit-tag"><i class="fa fa-envelope-open" aria-hidden="true"></i></div>
                     <p>Randevu kaynaklı gelir kaybının önlenmesi</p>
                 </div>
             </div>
@@ -160,7 +167,7 @@ $moduller = $data['moduller_ve_kapasite'];
  
     </div>
 </section>
-<section id="ozellikler" class="features-section">
+<section class="features-section">
     <div class="container">
         <div class="section-header">
             <h2 class="hero-title">Zengin Özellik  Seti</h2>
@@ -211,6 +218,17 @@ $moduller = $data['moduller_ve_kapasite'];
         </div>
     </div>
 </section>
+<section id="demo" class="demo-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="hero-title">Canlı <span class="marker">Demo</span></h2>
+            <p>Sistemi hemen deneyin, kayıt gerekmez.</p>
+        </div>
+        <div class="demo-wrapper">
+            <iframe src="http://localhost:5043" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+</section>
 <section id="paketler" class="pricing-section">
     <div class="container">
 
@@ -219,10 +237,6 @@ $moduller = $data['moduller_ve_kapasite'];
             <p>Yıllık alımlarda tasarruf edin, işletmenizi büyütün.</p>
         </div>
 
-        <div class="pricing-toggle-wrapper" id="pricingToggle">
-            <button class="toggle-btn active" onclick="pricingSwitch('monthly', this)">Aylık</button>
-            <button class="toggle-btn" onclick="pricingSwitch('yearly', this)">Yıllık</button>
-        </div>
 
         <div class="pricing-grid">
             <?php foreach($data['paketler'] as $paket): ?>
@@ -230,7 +244,7 @@ $moduller = $data['moduller_ve_kapasite'];
 
                     <?php if(isset($paket['populer'])): ?>
                         <div class="border-trail"></div>
-                        <span class="badge"><i class="fa-solid fa-star"></i> Popüler</span>
+                        <span class="badge">En çok tercih</span>
                     <?php endif; ?>
 
                     <div class="card-header">
@@ -238,18 +252,34 @@ $moduller = $data['moduller_ve_kapasite'];
                         <div class="price-wrapper">
                             <span class="price-val"
                                 data-monthly="<?php echo $paket['fiyat']; ?>"
-                                data-yearly="<?php echo intval($paket['fiyat']) * 10; ?> TL">
+                                data-yearly="<?php echo $paket['fiyat']; ?>">
                                 <?php echo $paket['fiyat']; ?>
                             </span>
-                            <span class="price-period">/ay</span>
+                            <span class="price-period">/ ay</span>
+                        </div>
+                        <div class="price-meta">
+                            Kurulum: <strong><?php echo $paket['kurulum']; ?></strong>
+                            &nbsp;·&nbsp;
+                            Bakım: <strong><?php echo $paket['bakim']; ?></strong>
                         </div>
                     </div>
 
+                    <div class="price-divider"></div>
+
                     <ul class="features-list">
                         <?php foreach($paket['ozellikler'] as $ozellik): ?>
-                            <li><i class="fa-solid fa-circle-check"></i> <?php echo $ozellik; ?></li>
+                            <?php if(strpos($ozellik, '<strong') === 0): ?>
+                                <li class="feature-category"><?php echo $ozellik; ?></li>
+                            <?php else: ?>
+                                <li><i class="fa-solid fa-check"></i> <?php echo $ozellik; ?></li>
+                            <?php endif; ?>
                         <?php endforeach; ?>
                     </ul>
+
+                    <div class="sms-quota">
+                        <span class="sms-number"><?php echo explode(' SMS', $paket['sms_kotasi'])[0]; ?></span>
+                        <span class="sms-label">SMS / ay</span>
+                    </div>
 
                     <div class="card-footer">
                         <a href="#iletisim" class="btn-price-main">Hemen Başla</a>
@@ -262,18 +292,67 @@ $moduller = $data['moduller_ve_kapasite'];
 </section>
 
 <footer id="iletisim" class="footer">
-    <div class="container footer-content">
-        <div class="footer-info">
-            <h2><?php echo $data['proje_kimligi']['logo'] ?? 'MakasAdmin'; ?></h2>
-            <p>Berber dükkanınızı cebinizden yönetin.</p>
+    <div class="container">
+ 
+        <div class="footer-top">
+ 
+            <!-- LOGO & AÇIKLAMA -->
+            <div class="footer-brand">
+                <div class="footer-logo"><?php echo $data['proje_kimligi']['logo'] ?? 'Softetro<b>Randevu</b>'; ?></div>
+                <p class="footer-desc">Berber & salon işletmenizi dijital çağa taşıyan, akıllı randevu ve yönetim ekosistemi.</p>
+                <div class="footer-socials">
+                    <a href="#" class="footer-social"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="footer-social"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" class="footer-social"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="footer-social"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+ 
+            <!-- ÜRÜN -->
+            <div class="footer-col">
+                <h5>Ürün</h5>
+                <ul>
+                    <li><a href="#ozellikler">Özellikler</a></li>
+                    <li><a href="#paketler">Paketler</a></li>
+                    <li><a href="#demo">Demo</a></li>
+                </ul>
+            </div>
+ 
+            
+ 
+            <!-- İLETİŞİM -->
+            <div class="footer-col">
+                <h5>İletişim</h5>
+                <div class="footer-contact">
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>yasincanatici@projeniz.com</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+90 (505) 075 50 42</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Konya, Türkiye</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>WhatsApp Destek</span>
+                    </div>
+                </div>
+            </div>
+ 
         </div>
-        <div class="footer-contact">
-            <p><i class="fa-solid fa-envelope"></i> destek@projeniz.com</p>
-            <p><i class="fa-solid fa-phone"></i> +90 (555) 000 00 00</p>
+ 
+        <div class="footer-bottom">
+            <p>&copy; 2026 <?php echo $data['proje_kimligi']['logo'] ?? 'SoftetroRandevu'; ?>. Tüm hakları saklıdır.</p>
+            <div class="footer-status">
+                <span class="footer-status-dot"></span>
+                Sistem aktif &amp; çalışıyor
+            </div>
         </div>
-    </div>
-    <div class="footer-bottom">
-        <p>&copy; 2026 <?php echo strip_tags($data['proje_kimligi']['logo']); ?>. Tüm hakları saklıdır.</p>
+ 
     </div>
 </footer>
 <script>
@@ -289,8 +368,8 @@ $moduller = $data['moduller_ve_kapasite'];
         });
     }, { threshold: 0.12 });
 
-    document.querySelectorAll('.bento-item.reveal, .benefits-header.reveal, .benefit-card.reveal')
-        .forEach(el => revealObserver.observe(el));
+    document.querySelectorAll('.bento-item.reveal, .benefits-header.reveal, .benefit-card.reveal, .fan-stack-wrapper')
+    .forEach(el => revealObserver.observe(el));
 
 
     /* ── 2. COUNT-UP ANİMASYONU ── */
@@ -322,11 +401,19 @@ $moduller = $data['moduller_ve_kapasite'];
     /* ── 3. DARK THEME TETİKLEYİCİ ── */
     const techSection = document.querySelector('.tech-benefits-section');
     if (techSection) {
-        const darkObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                document.body.classList.toggle('is-dark-theme', entry.isIntersecting);
-            });
-        }, { threshold: 0.3 });
+       const darkObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            setTimeout(() => {
+                document.body.classList.add('is-dark-theme');
+            }, 50);
+        } else {
+            setTimeout(() => {
+                document.body.classList.remove('is-dark-theme');
+            }, 50);
+        }
+    });
+}, { threshold: 0.1 });
         darkObserver.observe(techSection);
     }
 
@@ -355,25 +442,80 @@ $moduller = $data['moduller_ve_kapasite'];
         });
     }, { threshold: 0.15 });
     document.querySelectorAll('.price-card').forEach(c => cObs.observe(c));
+})();
+(function () {
+    const stack = document.getElementById('fanStack');
+    if (!stack) return;
 
+    const cards = Array.from(stack.querySelectorAll('.fan-card'));
+    const total = cards.length;
+    let current = total - 1;
 
-    /* ── 6. PRICING — AYLИК / YILLIK TOGGLE ── */
-    window.pricingSwitch = function (period, btn) {
-        document.querySelectorAll('.pricing-toggle-wrapper .toggle-btn')
-            .forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
+    function updateCards() {
+        cards.forEach((card, i) => {
+            card.classList.remove('active');
+            const offset = i - current;
 
-        document.querySelectorAll('.price-val').forEach(el => {
-            const next = el.dataset[period];
-            if (!next) return;
-            el.classList.remove('switching');
-            void el.offsetWidth;
-            el.classList.add('switching');
-            el.textContent = next;
-            el.addEventListener('animationend', () => el.classList.remove('switching'), { once: true });
+            if (offset === 0) {
+                card.style.transition  = 'transform 0.6s cubic-bezier(0.34,1.56,0.64,1), opacity 0.5s ease, box-shadow 0.4s ease';
+                card.style.transform   = 'rotate(0deg) translateY(0px) scale(1)';
+                card.style.opacity     = '1';
+                card.style.zIndex      = '10';
+                card.style.boxShadow   = '0 30px 60px rgba(201,73,73,0.25)';
+                card.style.borderColor = 'var(--primary)';
+                card.classList.add('active');
+            } else if (offset === -1 || offset === total - 1) {
+                card.style.transition  = 'transform 0.6s cubic-bezier(0.34,1.56,0.64,1), opacity 0.5s ease';
+                card.style.transform   = 'rotate(-4deg) translateY(5px) scale(0.94)';
+                card.style.opacity     = '0.75';
+                card.style.zIndex      = '5';
+                card.style.boxShadow   = 'none';
+                card.style.borderColor = '';
+            } else if (offset === -2 || offset === total - 2) {
+                card.style.transition  = 'transform 0.6s cubic-bezier(0.34,1.56,0.64,1), opacity 0.5s ease';
+                card.style.transform   = 'rotate(-8deg) translateY(12px) scale(0.88)';
+                card.style.opacity     = '0.5';
+                card.style.zIndex      = '1';
+                card.style.boxShadow   = 'none';
+                card.style.borderColor = '';
+            } else {
+                card.style.transition  = 'transform 0.5s ease, opacity 0.4s ease';
+                card.style.transform   = 'rotate(-10deg) translateY(80px) scale(0.82)';
+                card.style.opacity     = '0';
+                card.style.zIndex      = '0';
+                card.style.boxShadow   = 'none';
+                card.style.borderColor = '';
+            }
         });
-    };
+    }
 
+    function goTo(index) {
+        /* Aktif kartı alta göm, sonra indexe geç */
+        const prev = cards[current];
+        prev.style.transition = 'transform 0.5s ease, opacity 0.4s ease';
+        prev.style.transform  = 'rotate(4deg) translateY(120px) scale(0.85)';
+        prev.style.opacity    = '0';
+        prev.style.zIndex     = '0';
+
+        setTimeout(() => {
+            current = ((index % total) + total) % total;
+            updateCards();
+        }, 180);
+    }
+
+    stack.addEventListener('click', () => {
+        goTo(current === 0 ? total - 1 : current - 1);
+    });
+
+    /* Swipe desteği */
+    let startX = 0;
+    stack.addEventListener('touchstart', e => { startX = e.touches[0].clientX; });
+    stack.addEventListener('touchend', e => {
+        const diff = startX - e.changedTouches[0].clientX;
+        if (Math.abs(diff) > 40) goTo(diff > 0 ? current - 1 : current + 1);
+    });
+
+    updateCards();
 })();
 </script>
 </body>
